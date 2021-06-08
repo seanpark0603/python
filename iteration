@@ -1,0 +1,14 @@
+a = 5
+result = []
+def func(n)
+    if n == 1:
+        result.append(1)
+    while n > 1:
+        n, m = divmod(n, 2)
+        if m == 0:
+            result.append(0)
+        else if n == 1:
+            result.append(1)
+        func(n)
+func(a)
+print(result)
