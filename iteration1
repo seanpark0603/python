@@ -1,0 +1,9 @@
+import math
+a = 13
+ans=''
+for i in range(math.ceil(math.log(a, 2))) :
+    a, b = divmod(a, 2)
+    ans+=str(b)
+    if a==0:
+        break;
+print(ans)
